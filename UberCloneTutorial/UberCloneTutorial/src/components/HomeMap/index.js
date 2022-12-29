@@ -4,8 +4,8 @@ import Icon from "react-native-vector-icons/FontAwesome";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>notJust a component</Text>
+    <View style={{ height: 300, backgroundColor: "#a0abff" }}>
+      <Text>I am a map</Text>
     </View>
   );
 }
