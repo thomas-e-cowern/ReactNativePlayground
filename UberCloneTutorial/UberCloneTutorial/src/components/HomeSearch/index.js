@@ -17,7 +17,12 @@ export default function HomeSearch() {
         </View>
       </View>
       {/* last destiantion */}
-
+      <View style={styles.row}>
+        <View style={styles.iconContainer}>
+          <AntDesign name={"clockcircle"} size={16} color={"#ffffff"} />
+        </View>
+        <Text style={styles.destinationText}>Spin Nightclub</Text>
+      </View>
       {/* Home */}
     </View>
   );
