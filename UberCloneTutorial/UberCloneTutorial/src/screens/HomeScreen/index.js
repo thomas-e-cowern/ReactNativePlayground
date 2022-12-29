@@ -3,8 +3,9 @@ import { StyleSheet, Text, View } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 import HomeMap from "../../components/HomeMap";
 import CovidMessage from "../../components/CovidMessage";
+import HomeSearch from "../../components/HomeSearch";
 
-export default function App() {
+export default function HomeScreen() {
   return (
     <View>
       <HomeMap />
@@ -12,6 +13,7 @@ export default function App() {
       {/* Covid Message */}
       <CovidMessage />
       {/* Bottom Component */}
+      <HomeSearch />
     </View>
   );
 }
