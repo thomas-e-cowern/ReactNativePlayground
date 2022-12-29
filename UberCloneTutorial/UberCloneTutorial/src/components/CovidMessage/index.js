@@ -12,7 +12,12 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <Text>I am a map</Text>
+      <Text>Travel only if necessary</Text>
+      <Text>
+        Help us to restrict the spread of COVID by taking into accout local
+        regulations and masking when appropriate
+      </Text>
+      <Text>Learn more </Text>
     </View>
   );
 }
