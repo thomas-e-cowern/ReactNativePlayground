@@ -16,14 +16,22 @@ export default function HomeSearch() {
           <MaterialIcons name={"keyboard-arrow-down"} size={16} />
         </View>
       </View>
+
       {/* last destiantion */}
       <View style={styles.row}>
         <View style={styles.iconContainer}>
           <AntDesign name={"clockcircle"} size={16} color={"#ffffff"} />
         </View>
-        <Text style={styles.destinationText}>Spin Nightclub</Text>
+        <Text style={styles.destinationText}>1909</Text>
       </View>
+
       {/* Home */}
+      <View style={styles.row}>
+        <View style={[styles.iconContainer, { backgroundColor: "#218cff" }]}>
+          <AntDesign name={"home"} size={16} color={"#ffffff"} />
+        </View>
+        <Text style={styles.destinationText}>Home</Text>
+      </View>
     </View>
   );
 }
