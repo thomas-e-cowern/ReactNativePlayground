@@ -24,14 +24,14 @@ const styles = StyleSheet.create({
   },
   row: {
     flexDirection: "row",
-    padding: 10,
+    padding: 15,
     alignItems: "center",
     borderBottomWidth: 1,
     borderBottomColor: "#b3b3b3",
   },
   iconContainer: {
     backgroundColor: "#b3b3b3",
-    padding: 10,
+    padding: 15,
     borderRadius: 25,
   },
   destinationText: {
