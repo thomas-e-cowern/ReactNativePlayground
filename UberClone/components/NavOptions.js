@@ -1,5 +1,6 @@
 import { FlatList, Text, TouchableOpacity, View, Image } from "react-native";
 import React from "react";
+import { Icon } from "@rneui/base";
 
 const data = [
   {
@@ -41,6 +42,12 @@ const NavOptions = () => {
             <Text style={{ marginTop: 2, fontWeight: "bold" }}>
               {item.title}
             </Text>
+            <Icon
+              style={{ marginTop: 2, fontWeight: "bold" }}
+              type="antdesign"
+              color="white"
+              name="arrowright"
+            />
           </View>
         </TouchableOpacity>
       )}
