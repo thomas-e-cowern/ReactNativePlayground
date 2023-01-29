@@ -3,19 +3,12 @@ import { StyleSheet, Text, View, SafeAreaView, Image } from "react-native";
 import { Provider } from "react-redux";
 import HomeScreen from "./screens/HomeScreen";
 import { store } from "./store";
-import logo from "./assets/rose-trolley-logo.png";
 
 export default function App() {
   return (
     <Provider store={store}>
       <SafeAreaView>
-        {/* <HomeScreen /> */}
-        <View style={{ padding: 5 }}>
-          <Image
-            style={{ width: 100, height: 100, resizeMode: "contain" }}
-            source={logo}
-          />
-        </View>
+        <HomeScreen />
         <StatusBar style="auto" />
       </SafeAreaView>
     </Provider>
