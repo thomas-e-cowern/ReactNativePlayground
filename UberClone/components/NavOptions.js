@@ -23,12 +23,24 @@ const NavOptions = () => {
       keyExtractor={(item) => item.id}
       horizontal
       renderItem={({ item }) => (
-        <TouchableOpacity>
+        <TouchableOpacity
+          style={{
+            padding: 2,
+            paddingLeft: 6,
+            paddingBottom: 8,
+            paddingTop: 4,
+            backgroundColor: "gray",
+            margin: 2,
+          }}
+        >
           <View>
             <Image
               style={{ width: 120, height: 120, resizeMode: "contain" }}
               source={{ uri: item.image }}
             />
+            <Text style={{ marginTop: 2, fontWeight: "bold" }}>
+              {item.title}
+            </Text>
           </View>
         </TouchableOpacity>
       )}
