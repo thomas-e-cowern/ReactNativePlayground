@@ -8,10 +8,13 @@ import logo from "./assets/rose-trolley-logo.png";
 export default function App() {
   return (
     <Provider store={store}>
-      <SafeAreaView style={styles.container}>
+      <SafeAreaView>
         {/* <HomeScreen /> */}
-        <View>
-          <Image source={logo} />
+        <View style={{ padding: 5 }}>
+          <Image
+            style={{ width: 100, height: 100, resizeMode: "contain" }}
+            source={logo}
+          />
         </View>
         <StatusBar style="auto" />
       </SafeAreaView>
