@@ -1,14 +1,18 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, SafeAreaView } from "react-native";
+import { StyleSheet, Text, View, SafeAreaView, Image } from "react-native";
 import { Provider } from "react-redux";
 import HomeScreen from "./screens/HomeScreen";
 import { store } from "./store";
+import logo from "./assets/rose-trolley-logo.png";
 
 export default function App() {
   return (
     <Provider store={store}>
       <SafeAreaView style={styles.container}>
-        <HomeScreen />
+        {/* <HomeScreen /> */}
+        <View>
+          <Image source={logo} />
+        </View>
         <StatusBar style="auto" />
       </SafeAreaView>
     </Provider>
