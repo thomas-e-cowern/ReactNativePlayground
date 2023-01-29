@@ -29,7 +29,7 @@ const NavOptions = () => {
             paddingLeft: 6,
             paddingBottom: 8,
             paddingTop: 4,
-            backgroundColor: "gray",
+            backgroundColor: "lightgray",
             margin: 2,
           }}
         >
