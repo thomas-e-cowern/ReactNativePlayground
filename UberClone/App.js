@@ -14,7 +14,7 @@ export default function App() {
   return (
     <Provider store={store}>
       <NavigationContainer>
-        <SafeAreaProvider style={{ top: 42 }}>
+        <SafeAreaProvider style={{ marginTop: 48 }}>
           <Stack.Navigator>
             <Stack.Screen
               name="HomeScreen"
