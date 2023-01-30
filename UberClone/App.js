@@ -17,12 +17,12 @@ export default function App() {
         <SafeAreaProvider style={{ top: 42 }}>
           <Stack.Navigator>
             <Stack.Screen
-              name="Home"
+              name="HomeScreen"
               component={HomeScreen}
               options={{ headerShown: false }}
             />
             <Stack.Screen
-              name="Map"
+              name="MapScreen"
               component={MapScreen}
               options={{ headerShown: false }}
             />
