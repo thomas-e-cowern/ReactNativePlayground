@@ -34,7 +34,7 @@ const NavOptions = () => {
             margin: 2,
           }}
         >
-          <View>
+          <View style={{ alignItems: "center" }}>
             <Image
               style={{ width: 120, height: 120, resizeMode: "contain" }}
               source={{ uri: item.image }}
@@ -43,7 +43,14 @@ const NavOptions = () => {
               {item.title}
             </Text>
             <Icon
-              style={{ marginTop: 2, fontWeight: "bold" }}
+              style={{
+                marginTop: 8,
+                fontWeight: "bold",
+                backgroundColor: "black",
+                padding: 5,
+                borderRadius: 10,
+                borderWidth: 1,
+              }}
               type="antdesign"
               color="white"
               name="arrowright"
