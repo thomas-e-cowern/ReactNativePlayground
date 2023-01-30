@@ -4,23 +4,24 @@ import { Provider } from "react-redux";
 import HomeScreen from "./screens/HomeScreen";
 import { store } from "./store";
 import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/native-stack";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
+// const Stack = createNativeStackNavigator();
 
 export default function App() {
-  const Stack = createStackNavigator();
+  const Stack = createNativeStackNavigator();
 
   return (
     <Provider store={store}>
+      {/* <SafeAreaView> */}
       <NavigationContainer>
-        <SafeAreaView>
-          <Stack.Navigator
-            name="HomeScreen"
-            component={HomeScreen}
-          ></Stack.Navigator>
-          <HomeScreen />
-          <StatusBar style="auto" />
-        </SafeAreaView>
+        <Stack.Navigator>
+          <Stack.Screen name="Home" component={HomeScreen} />
+        </Stack.Navigator>
+        {/* <HomeScreen />
+        <StatusBar style="auto" /> */}
       </NavigationContainer>
+      {/* </SafeAreaView> */}
     </Provider>
   );
 }
