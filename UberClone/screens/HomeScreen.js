@@ -3,8 +3,8 @@ import React from "react";
 import logo from "../assets/rose-trolley-logo.png";
 import NavOptions from "../components/NavOptions";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
-// import { GOOGLE_MAPS_APIKEY } from "@env";
-import Config from "react-native-config";
+import { GOOGLE_MAPS_APIKEY } from "@env";
+// import Config from "react-native-config";
 
 const HomeScreen = () => {
   return (
@@ -16,6 +16,18 @@ const HomeScreen = () => {
 
       <GooglePlacesAutocomplete
         placeholder="Where from?"
+        styles={{
+          container: {
+            flex: 0,
+          },
+          textInput: {
+            fontSize: 18,
+          },
+        }}
+        query={{
+          key: { GOOGLE_MAPS_APIKEY },
+          language: "en",
+        }}
         nearbyPlacesAPI="GooglePlacesSearch"
         debounce={400}
       />
